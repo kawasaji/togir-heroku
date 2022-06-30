@@ -15,7 +15,7 @@ async def start(message: types.Message):
 
 @dp.message_handler(commands=['ok'])
 async def start(message: types.Message):
-    await message.reply("/start")
+    await message.reply("/start ok")
 
 
 # @server.route('/' + API_TOKEN, methods=['POST'])
