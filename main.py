@@ -11,7 +11,12 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    await message.reply("ok")
+    await message.reply("/ok")
+
+@dp.message_handler(commands=['ok'])
+async def start(message: types.Message):
+    await message.reply("/start")
+
 
 # @server.route('/' + API_TOKEN, methods=['POST'])
 # def get_message():
